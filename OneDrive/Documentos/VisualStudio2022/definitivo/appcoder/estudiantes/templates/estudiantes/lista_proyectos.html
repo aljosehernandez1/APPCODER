@@ -1,0 +1,10 @@
+{% extends "estudiantes/base.html" %}
+
+{% block contenido%}
+    <h1>Lista de proyectos</h1>
+    <ul>
+    {% for proye in proyectos %}
+    <li>{{ proye.aprobado }}, {{ proye.nombre }}</li>
+    {% endfor %}
+    </ul>
+{% endblock contenido%}

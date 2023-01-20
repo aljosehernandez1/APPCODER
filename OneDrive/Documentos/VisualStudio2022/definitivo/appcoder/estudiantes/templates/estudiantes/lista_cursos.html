@@ -1,0 +1,14 @@
+{% extends "estudiantes/base.html" %}
+
+{% block subtitulo %}Lista de cursos{% endblock subtitulo%}
+{% block contenido%}
+    <h1>Lista de Cursos</h1>
+    <a href="{% url 'crear_curso' %}">Añadir curso</a>
+    <a href="{% url 'buscar_curso' %}">buscar</a>
+    <br></br>
+    <ul>
+    {% for cur in cursos %}
+    <li>{{ cur.nombre }}, {{ cur.comision }}, {{ cur.duracion }}</li>
+    {% endfor %}
+    </ul>
+{% endblock contenido%}

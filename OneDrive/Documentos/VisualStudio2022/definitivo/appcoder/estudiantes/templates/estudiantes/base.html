@@ -1,0 +1,69 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1", shrink-to-fit="no"/>
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Inicio</title>
+
+        <link rel="icon" type"image/x-icon" href="{% static 'assets/favicon.ico' %}" />
+        <link href="{% static 'css/styles.css' %}" rel="stylesheet"/>
+    </head>
+
+    <body>
+        <nav class="navbar navbar-light bg-ligth static-top">
+            <div class="container">
+                <a class="navbar-brand" href="{% url 'listar_alumnos' %}">Estudiantes</a>
+                <a class="navbar-brand" href="{% url 'listar_profesores' %}">Profesores</a>
+                <a class="navbar-brand" href="{% url 'listar_proyectos' %}">Proyectos</a>
+                <a class="navbar-brand" href="{% url 'listar_cursos' %}">Cursos</a>
+                <a class="navbar-brand" href="{% url 'listar_cursos' %}">crear_cursos</a>
+                <a class="navbar-brand" href="{% url 'listar_cursos' %}">buscar_curso</a>
+                
+                <a class="btn btn-primary" href="#signup">INICIAR</a>
+            </div>
+        </nav>
+
+        <section style="padding:80px;">
+            {% block contenido %}
+            {% endblock contenido %}        
+        </section>"
+
+
+
+        <footer class="="footer bg-ligth">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 h-100 text-center-lg-start my-auto">
+                        <ul class="list-inline mb-2">
+                            <li class="list-inline-item"><a href="#!">Ayuda</a></li>
+                            <li class="list-inline-item">.</li>
+                            <li class="list-inline-item"><a href="#!">Contacto</a></li>
+
+                        </ul>
+                        <p class="="text-muted small mb-4 mb-lg-">&copy; Curso de Python</p>"
+                    </div>
+                    <div class="col-lg-6 h-100 text-center text-lg-end my-auto">
+                        <ul class="list-inline mb-0">
+                            <li class="list-inline-item me-4">
+                                <a href="#!"><i class="bi_facebook fs-3"></i></a>
+                            </li>
+                            <li class="list-inline-item me-4">
+                                <a href="#!"><i class="bi-twitter fs-3"></i></a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="https://www.instagram.com"<>i class="bi-instagram fs-3"></i></a>
+                            </li>
+                         </ul>
+                    </div>
+                </div>
+            </div>
+       
+        
+        </footer>
+
+    </body>
